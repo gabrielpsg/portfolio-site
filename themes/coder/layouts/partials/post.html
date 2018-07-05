@@ -1,0 +1,69 @@
+
+<script>
+  var newStyle = document.createElement("link");
+
+newStyle.rel = "stylesheet";
+
+newStyle.href = "/style-blog.css";
+
+document.getElementsByTagName("head")[0].appendChild(newStyle);
+</script>
+
+<div class="container container-child">
+          <div style="float:left"><a href="index.html"><h1 style="font-size: 32px;" class="title" >gabriel gomes&nbsp</h1></a>
+        </div>
+</div>
+
+<section class="container post">
+
+
+  <article>
+
+      <h1 class="" style="    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3.3em;
+    color: #ffffff;">{{ .Title }}</h1>
+      <h2 class="date" style="    color: #3e3998;
+    font-size: 1.2em;
+    top: -20px; padding-top: 15px;">{{ .Date.Format "January 2, 2006" }}</h2>
+
+      {{ if eq .Params.math "true" }}
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$']],
+              displayMath: [['$$','$$']],
+              processEscapes: true,
+              processEnvironments: true,
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+              TeX: { extensions: ["AMSmath.js", "AMSsymbols.js"] }
+            }
+          });
+          MathJax.Hub.Queue(function() {
+            // Fix <code> tags after MathJax finishes running. This is a
+            // hack to overcome a shortcoming of Markdown. Discussion at
+            // https://github.com/mojombo/jekyll/issues/199
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+          });
+          </script>
+      {{ end }}
+
+    {{ .Content }}
+  </article>
+
+  <br/>
+
+  {{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}}
+      {{ template "_internal/disqus.html" . }}
+  {{ end }}
+  
+</section>

@@ -1,0 +1,72 @@
+.project-left-item span {
+    color: white !important;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.6em;
+}
+
+.project-right-item span {
+    color: white !important;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.6em;
+}
+
+
+.project-left-item a {
+    font-size: 24px;
+    text-decoration: underline;
+    position: relative;
+    color: #0078FF;
+    transition: all 0.3s ease;
+    font-family: "athelas",serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+.project-right-item a {
+    font-size: 24px;
+    text-decoration: underline;
+    position: relative;
+    color: #0078FF;
+    transition: all 0.3s ease;
+    font-family: "athelas",serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+.p-project{    
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: 'athelas', 'faricy-new-web',Helvetica, Arial, serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.70;
+    letter-spacing: -.003em;
+}
+
+h3{
+    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.0em;
+    color: #ffffff;
+}

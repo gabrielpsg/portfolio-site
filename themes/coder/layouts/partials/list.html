@@ -1,0 +1,42 @@
+
+<div class="container container-child">
+          <div style="float:left"><a href="index.html"><h1 style="font-size: 32px;" class="title" >gabriel gomes&nbsp</h1></a>
+        </div>
+</div>
+<div class="titulo-interna-1">
+            <h2>POSTS</h2>
+        </div>
+
+     
+<section class="container list">
+  <h2 class="title"></h2></br></br>
+  <ul style=" list-style-type: none; padding:0px">
+    {{ range .Paginator.Pages }}
+    <li style="margin-top:20px;">
+     <a href="{{ .URL }}" style="    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.0em;
+    color: #ffffff;">{{ .Title }}</a> <span style="    font-size: 1.0em;
+    top: -20px;
+    padding: 15px;
+    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'soleil', 'helvetica', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;text-align:right;">{{ .Date.Format "January 2, 2006" }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>
