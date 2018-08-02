@@ -1,0 +1,1353 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+	font-family: 'athelas', 'faricy-new-web',Helvetica, Arial, serif;
+	font-size: 14px;
+	overflow-x: hidden;
+	background-color:#141338;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* Preloader */
+
+.preloader {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.preloader img {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 32px);
+}
+
+.preloader div {
+	display: none;
+	/* Preload the Second Pricing Image */
+	background: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/pricing2.jpg') no-repeat 9999px 9999px;
+	background-position: 9999px 9999px;
+}
+
+/* Typography */
+
+
+
+p {
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'athelas', 'faricy-new-web',Helvetica, Arial, serif;
+	position: relative;
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 72px;
+	font-family: "athelas",serif !important;
+	font-style: normal;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 58px;
+	color: #0D072A;
+	font-weight: 900;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul.white-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.white-list li {
+	font-size: 18px;
+	margin: 10px 0;
+	color: #fff;
+}
+
+ul.white-list li:before {
+	content: ' ';
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-right: 15px;
+	background: white;
+}
+
+
+a {
+    color: #0078FF;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-family: "athelas",serif;
+	font-style: italic;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #FFA0A0;
+}
+
+.active{
+	color: #0078FF !important;
+}
+.active:hover{
+	color: #FFA0A0 !important;
+}
+.title{
+	color:#fff !important;
+	display: table-cell;
+}
+
+.subtitle{
+	font-family: "soleil", "helvetica", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size:50px;
+	color: #141338;
+	text-shadow:
+		-1px -1px 0 #FFA0A0,
+		1px -1px 0 #FFA0A0,
+		-1px 1px 0 #FFA0A0,
+		1px 1px 0 #FFA0A0;
+}
+.links{
+	text-decoration: underline;
+	font-size: 24px;
+}
+.links-bigger{
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+}
+.links-bigger:hover{
+    color: white;
+}
+.links-bigger-2 {
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+    text-align: right;
+    float: right;
+    margin-right: -69px;
+}
+
+.links-bigger-2:hover{
+    color: white;
+}
+
+.location-home{
+	background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/sp_symbol.png');
+    height: 161px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+.location-home span{
+	vertical-align: middle;
+	font-size: 24px;
+	color: white;
+}
+.location-home a{
+	vertical-align: middle;
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+    position: relative;
+    top: -10px;
+}
+.location-home:hover{
+	 background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/sp_symbol_hover.gif');
+	 height: 161px;
+	 background-repeat: no-repeat;
+	 display: block;
+}
+
+.working-location{
+	 height: 161px;
+	 background-repeat: no-repeat;
+	 display: block;
+	 text-align: right;
+}
+.working-location span{
+	vertical-align: middle;
+	font-size: 24px;
+	color: white;
+}
+.working-location a{
+	vertical-align: middle;
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+    position: relative;
+    top: -10px;
+    -webkit-transition: all 0s ease;
+}
+
+.working-location a:hover{
+ background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/fjord_sp.gif');
+    display: block;
+    font-size: 0px;
+    text-align: left;
+    margin-top: 10px;
+    background-size: 100%;
+    width: 388px;
+    height: 291px;
+}
+
+.project-left-item{
+    height: 161px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+.project-left-item span{
+	vertical-align: middle;
+	font-size: 24px;
+	color: white;
+}
+.project-left-item a{
+	vertical-align: middle;
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+    position: relative;
+    top: -10px;
+}
+.project-left-item:hover{
+	color:white;
+}
+
+.project-right-item{
+	 height: 161px;
+	 background-repeat: no-repeat;
+	 display: block;
+	 text-align: right;
+}
+.project-right-item span{
+	vertical-align: middle;
+	font-size: 24px;
+	color: white;
+}
+.project-right-item a{
+	vertical-align: middle;
+    font-size: 36px;
+    text-decoration: underline;
+    font-style: normal;
+    position: relative;
+    top: -10px;
+    -webkit-transition: all 0s ease;
+}
+
+.project-right-item a:hover{
+	color:white;
+}
+
+.projects-list-home a{    
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 17px !important;
+    font-family: "athelas",serif;
+    font-style: italic;
+    font-weight: 700;}
+
+.projects-list-home{    
+    color:white;}
+
+.posts-list-home{
+	border-left: 0.2px #7da5fff2 solid;
+}
+
+.projects-list-home a {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 17px !important;
+    line-height: 20px;
+    font-family: "athelas",serif;
+    font-style: normal;
+    padding-right: 10px;
+    font-weight: 100;
+}
+
+.avianca-hover{
+      -webkit-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out !important;
+}
+.avianca-hover:hover{
+    -webkit-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out !important;
+    background-image: url(https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/avianca/screens.png);
+    display: block;
+    position: fixed;
+    z-index: 0;
+    -webkit-filter: grayscale(100%);
+    width: 500px;
+    height: 500px;
+    font-size: 0px !important;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-align: left;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    background-size: 100%;
+}
+.fleury-hover{
+      -webkit-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out !important;
+}
+
+.fleury-hover:hover{
+    -webkit-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out !important;
+    background-image: url(https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/project-1/telas.png);
+    display: block;
+    position: fixed;
+    z-index: 0;
+    -webkit-filter: grayscale(100%);
+    width: 500px;
+    height: 500px;
+    font-size: 0px !important;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-align: left;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    background-size: 100%;
+}
+
+.avianca-hover-bg{
+}
+
+/* Blink Cursor */
+
+.blink {
+	position: relative;
+	top: 4px;
+	display: inline-block;
+	width: 4px;
+	height: 50px;
+	height: 5vh;
+	margin: 0 10px;
+
+}
+
+
+.container {
+	position: relative;
+	z-index: 1;
+	margin-top: 100px;
+}
+.container-child {
+	position: relative;
+	z-index: 1;
+	margin-top: 0px !important;
+}
+
+.content-child {
+	width: 80%;
+	margin-left: 100px;
+}
+
+h4.mine-features{
+    padding: 20px;
+    display: block;
+    color: white;
+    border: 1px solid white;
+    font-size: 24px;
+}
+
+/* KNOW PAGE PICTURES */
+
+.know-moodboard img{
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.know-moodboard img:hover{
+  -webkit-transform: scale(1.09, 1.09);
+  transform: scale(1.09, 1.09);
+  z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.know-moodboard div:hover{
+  -webkit-transform: scale(1.09, 1.09);
+  transform: scale(1.09, 1.09);
+  z-index: 999;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.know-1{
+	width: 35%;
+	position: absolute;
+	top: 690px;
+	left: 2%;
+}
+.know-2{
+	width: 40%;
+	position: absolute;
+	top: 650px;
+	left: 35%;
+}
+.know-3{
+	width: 30%;
+	position: absolute;
+	top: 620px;
+	left: 65%;
+}
+.know-4{
+	width: 30%;
+	position: absolute;
+	top: 835px;
+	left: 5%;
+}
+.know-5{
+	width: 30%;
+	position: absolute;
+	top: 790px;
+	left: 75%;
+}
+.know-6{
+	width: 25%;
+	position: absolute;
+	top: 1010px;
+	left: 10%;
+}
+.know-7{
+	width: 22%;
+	position: absolute;
+	top: 1000px;
+	left: 75%;
+}
+.know-8{
+	width: 25%;
+	position: absolute;
+	top: 1170px;
+	left: 35%;
+}
+.know-9 {
+    width: 25%;
+    position: absolute;
+    top: 1192px;
+    left: 60%;
+}
+.know-10 {
+    width: 28%;
+    position: absolute;
+    top: 1100px;
+    left: 75%;
+}
+.know-11 {
+    width: 25%;
+    position: absolute;
+    top: 1348px;
+    left: 17%;
+}
+.know-12 {
+    width: 28%;
+    position: absolute;
+    top: 1390px;
+    left: 40%;
+}
+
+
+
+/* WHAT PAGE */
+
+.what-projects{
+	position: relative;
+}
+.what-projects a{
+    font-size: 29px;
+    color: #0D072A;
+    line-height: 42px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+    top: -10px;
+    position: relative;
+}
+.what-projects a:hover {
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.desc-preletores{
+    position: fixed;
+    z-index: 999;
+    display: block;
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 32px rgb(121, 44, 15);
+}
+
+.preletor-1-desc{
+	display: none;
+}
+
+.fechar-preletores{
+    text-align: right;
+    font-family: 'helvetica', sans-serif !important;
+    font-stretch: 28%;
+    float: right;
+    z-index:999;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+.project-1_hover {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/project-1/project-1.gif');
+    width: 388px;
+    height: 291px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 0;
+    margin-right: -66px;
+    padding: 0;
+    z-index: 0;
+    display: none;
+}
+.project-2_hover {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/fjord_sp.gif');
+    width: 388px;
+    height: 291px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 0;
+    margin-right: -66px;
+    padding: 0;
+    z-index: 0;
+    display: none;
+}
+.what-projects ul {
+    list-style-type: none;
+    padding: 0px;
+    }
+
+li.project {
+    font-size: 64px;
+    margin-top: 0px;
+    list-style-type: none;
+    vertical-align: middle;
+        z-index: 999;
+}
+li.project:hover {
+    font-size: 64px;
+    margin-top: 0px;
+    color: white;
+    vertical-align: middle;
+}
+
+/* Sections */
+section {
+	position: relative;
+}
+
+.section {
+	padding: 40px 0;
+	background: #fff;
+}
+
+.section-padded {
+	padding: 140px 0 40px;
+}
+
+.cut-top {
+	content: ' ';
+	position: absolute;
+	z-index: 1;
+	top: -70px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-top: 80px solid transparent;
+	border-right: 30px solid white;
+}
+
+.cut-bottom {
+	content: ' ';
+	position: absolute;
+	z-index: 1;
+	bottom: -80px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid transparent;
+	border-left: 30px solid white;
+}
+
+.intro-tables {
+	top: -130px;
+	position: relative;
+}
+
+.intro-table {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: 0% 0%;
+}
+
+.intro-table-first {
+	background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/table-1.jpg');
+}
+
+.intro-table-hover {
+	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
+	transition: background-image 0.3s ease, background-position 0.3s;
+	background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/table-2.jpg');
+}
+
+.intro-table-hover h4 {
+	-webkit-transform: translateY(170px);
+	transform: translateY(170px);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.intro-table-hover:hover {
+	background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/table-2-hover.jpg');
+	background-position: 50% 50%;
+}
+
+
+.intro-table-third {
+	color:gray;
+	  padding: 0px !important;
+}
+.intro-table-third h3 {
+ 
+    padding: 20px !important;
+       color: rgb(77, 121, 214);
+}.intro-table-third h4 {
+	top: 30px;
+	  padding: 20px !important;
+	color:gray;
+}
+.intro-table-third h5 {
+	top: 10px;
+	  padding: 20px !important;
+	color:gray;
+}
+
+.btn.btn-blue {
+    backgrou
+    nd: #e32503;
+}
+
+.intro-table-hover .expand {
+	margin: 30px;
+	margin-top: 120px;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s ease, opacity 0.3s;
+	-webkit-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.intro-table-hover:hover h4 {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.intro-table-hover:hover .expand {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.intro-table-hover .hide-hover {
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.intro-table-hover:hover .hide-hover {
+	opacity: 0;
+}
+
+.intro-tables .intro-table {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin: 20px 0;
+}
+
+.intro-tables .intro-table .heading {
+	margin: 0;
+	padding: 30px;
+}
+
+.intro-tables .intro-table .small-heading {
+	margin: 0;
+	padding: 0 30px;
+}
+
+.intro-tables .intro-table .bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.intro-tables .intro-table .owl-schedule .schedule-row {
+	padding: 10px 30px;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.owl-schedule .schedule-row:not(:last-child) {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.owl-testimonials .author {
+	margin-top: 50px;
+}
+
+.ripple-effect {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: white;
+	-webkit-animation: ripple-animation 2s;
+	animation: ripple-animation 2s;
+}
+
+@-webkit-keyframes ripple-animation {
+	from {
+		opacity: 0.2;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: scale(100);
+		transform: scale(100);
+	}
+}
+
+@keyframes ripple-animation {
+	from {
+		opacity: 0.2;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: scale(100);
+		transform: scale(100);
+	}
+}
+
+
+@media(max-width:992px) {
+	h1 {
+		font-size: 56px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 46px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 16px;
+	}
+	h6 {
+		font-size: 12px;
+	}
+	.section {
+		padding: 30px 0;
+	}
+}
+
+
+.nave{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    margin-right: 10px;
+    text-align: right;
+    font-family: "athelas",serif;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+}
+.nave li {
+
+    display: inline;
+    padding: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 400ms ease-in-out;
+}
+.menu-1:hover ~ .menu-1_hover {
+	display: block;
+}
+
+.menu-1_hover {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/nav_know.png');
+    height: 25em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    display: none;
+}
+.menu-1_hover span {
+	       font-family: "soleil",sans-serif;
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 6.4em;
+    color: #ffa0a000;
+    -webkit-text-stroke: 1.5px #FFA0A0;
+    text-stroke: 1.5px #FFA0A0;
+}
+.menu-1_hover p{
+	float: right;
+    right: 0px;
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 50px;
+	font-size: 24px;
+	color: white;
+	text-align: right;
+}
+
+.menu-2:hover ~ .menu-2_hover {
+	display: block;
+}
+
+.menu-2_hover {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/nav_what.png');
+    height: 25em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    display: none;
+}
+.menu-2_hover span {
+	       font-family: "soleil",sans-serif;
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 6.4em;
+    color: #ffa0a000;
+    -webkit-text-stroke: 1.5px #FFA0A0;
+    text-stroke: 1.5px #FFA0A0;
+}
+.menu-2_hover p{
+	float: right;
+    right: 0px;
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 50px;
+	font-size: 24px;
+	color: white;
+	text-align: right;
+}
+
+
+.menu-3:hover ~ .menu-3_hover {
+	display: block;
+}
+
+.menu-3_hover {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/nav_chat.png');
+    height: 25em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    display: none;
+}
+.menu-3_hover span {
+	       font-family: "soleil",sans-serif;
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 6.4em;
+    color: #ffa0a000;
+    -webkit-text-stroke: 1.5px #FFA0A0;
+    text-stroke: 1.5px #FFA0A0;
+}
+.menu-3_hover p{
+	float: right;
+    right: 0px;
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 50px;
+	font-size: 24px;
+	color: white;
+	text-align: right;
+}
+
+.titulo-interna-1 {
+    height: 25em;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.titulo-interna-1 h2 {
+	       font-family: "soleil",sans-serif;
+    float: right;
+    margin-top: 55px;
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 6.4em;
+    color: #ffa0a000;
+    -webkit-text-stroke: 1.5px #0078FF;
+    text-stroke: 1.5px #0078FF;
+}
+
+.nave a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: normal;
+}
+.nave a:hover {
+    color: #FFA0A0;
+    display: inline-block;
+    font-size: 24px;
+}
+#intro{
+	height: 980px !important;
+}
+
+#disqus_thread{
+background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.tab-community>a {
+    display: none !important;}
+
+
+.pull-right {
+    display: none !important;}
+    .disqus-footer__wrapper {
+    display: none !important;
+}
+#placement-bottom{
+	    display: none !important;
+}
+
+.intro-table {
+	margin-top:80px;
+}
+
+@media(min-width: 1200px) {
+	#intro{
+	height: 1050px !important;
+}
+}
+@media(max-width: 1000px) {
+#intro{
+	height: 810px !important;
+}
+/* KNOW PAGE PICTURES */
+.know-1{
+	width: 35%;
+	position: absolute;
+	top: 770px;
+}
+.know-2{
+	width: 40%;
+	position: absolute;
+	top: 720px;
+	left: 35%;
+}
+.know-3{
+	width: 30%;
+	position: absolute;
+	top: 670px;
+	left: 65%;
+}
+.know-4 {
+    width: 30%;
+    position: absolute;
+    top: 870px;
+    left: 5%;
+}
+.know-5 {
+    width: 30%;
+    position: absolute;
+    top: 838px;
+    left: 75%;
+}
+.know-6 {
+    width: 25%;
+    position: absolute;
+    top: 1004px;
+    left: 10%;
+}
+.know-7 {
+    width: 22%;
+    position: absolute;
+    top: 1004px;
+    left: 75%;
+}
+.know-8 {
+    width: 25%;
+    position: absolute;
+    top: 1120px;
+    left: 35%;
+}
+.know-9 {
+    width: 25%;
+    position: absolute;
+    top: 1140px;
+    left: 60%;
+}
+.know-10 {
+    width: 28%;
+    position: absolute;
+    top: 1083px;
+    left: 75%;
+}
+.know-11 {
+    width: 25%;
+    position: absolute;
+    top: 1276px;
+    left: 17%;
+}
+.know-12 {
+    width: 28%;
+    position: absolute;
+    top: 1276px;
+    left: 40%;
+}
+}
+@media(max-width:991px) {
+	.text-center-mobile {
+		text-align: center !important;
+	}
+}
+
+@media(max-width: 760px) {
+	.container-child {
+    position: relative;
+    z-index: 1;
+    margin-top: 114px !important;
+}
+.links-bigger-2 {
+    float: left;
+    text-align: left;
+    margin-right: auto;
+}
+@media(max-width: 600px) {
+
+	.intro-table {
+	margin-top:0px !important;
+}
+
+.title {
+    display: block;
+    margin-bottom: -5px;
+}
+.subtitle {
+    margin-top: 25px;
+    font-size: 37px;
+}
+
+.location-home {
+    background-image: url('https://s3-sa-east-1.amazonaws.com/www.gabrielgomes.co/img/sp_symbol.png');
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.working-location {
+text-align: left;
+}
+
+.content-child {
+	width: 100% !important;
+	margin-left: 0px;
+}
+
+#disqus_thread {
+    background-color: white;
+    margin: -20px !important;
+    padding: 20px !important;
+    /* border-radius: 30px; */
+}
+
+.intro-table-third h3 {
+   font-weight: bold;
+     padding: 20px !important;
+     top:20px !important;
+    color: #e32503;
+
+}
+.know-1{
+	width: 35%;
+	position: absolute;
+	top: 824px;
+}
+.know-2{
+	width: 40%;
+	position: absolute;
+	top: 756px;
+	left: 35%;
+}
+.know-3{
+	width: 30%;
+	position: absolute;
+	top: 706px;
+	left: 65%;
+}
+.know-4 {
+    width: 30%;
+    position: absolute;
+    top: 906px;
+    left: 5%;
+}
+.know-5 {
+    width: 30%;
+    position: absolute;
+    top: 838px;
+    left: 75%;
+}
+.know-6 {
+    width: 25%;
+    position: absolute;
+    top: 999px;
+    left: 10%;
+}
+.know-7 {
+    width: 22%;
+    position: absolute;
+    top: 970px;
+    left: 75%;
+}
+.know-8 {
+    width: 25%;
+    position: absolute;
+    top: 1073px;
+    left: 35%;
+}
+.know-9 {
+    width: 25%;
+    position: absolute;
+    top: 1090px;
+    left: 60%;
+}
+.know-10 {
+    width: 28%;
+    position: absolute;
+    top: 1031px;
+    left: 75%;
+}
+.know-11 {
+    width: 25%;
+    position: absolute;
+    top: 1189px;
+    left: 17%;
+}
+.know-12 {
+    width: 28%;
+    position: absolute;
+    top: 1209px;
+    left: 40%;
+}
+.what-projects a {
+    font-size: 36px;
+    color: #0D072A;
+    line-height: 48px;
+    ext-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+    top: -10px;
+    position: relative;
+}
+.h3-title-mobile{
+	margin-top: 73px;
+}
+.menu-1_hover,.menu-2_hover,.menu-3_hover {
+	display: none !important;
+}
+
+}
+
+@media(max-width: 540px) {
+
+.know-moodboard{
+	 margin-top: -48px;
+}
+.know-1{
+	width: 70%;
+    position: static;
+}
+.know-2{
+	width: 50%;
+    margin-top: -51px;
+    margin-left: 52%;
+    position: static;
+}
+.know-3{
+	    width: 60%;
+    margin-top: 110px;
+    margin-left: 41%;
+    position: static;
+}
+.know-4 {
+	width: 59%;
+    margin-left: 1%;
+    margin-top: -710px;
+    position: static;
+}
+.know-5 {
+	width: 70%;
+    margin-top: -432px;
+    margin-left: 10%;
+    position: static;
+}
+.know-6 {
+    width: 70%;
+    margin-top: -14px;
+    margin-left: 33%;
+    position: static;
+}
+.know-7 {
+	width: 51%;
+    margin-top: -500px;
+    margin-left: -6%;
+    position: static;
+}
+.know-8 {
+    width: 70%;
+    margin-top: -113px;
+    margin-left: 0%;
+    position: static;
+}
+.know-9 {
+    width: 55%;
+    margin-top: -76px;
+    margin-left: 39%;
+    position: static;
+}
+.know-10 {
+    width: 70%;
+    margin-top: -22px;
+    margin-left: 31%;
+    position: static;
+}
+.know-11 {
+    width: 70%;
+    margin-top: -16px;
+    margin-left: 15%;
+    position: static;
+}
+.know-12 {
+      width: 70%;
+    margin-top: -41px;
+    margin-left: -1%;
+    position: static;
+}
+}
+@media(max-width: 400px) {
+#intro{
+	height: 720px !important;
+}
